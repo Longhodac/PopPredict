@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(python -c \"import sys, json; cells = json.load(sys.stdin)[''''cells'''']; [print(f''''{i}: {c.get(\"\"id\"\", \"\"no-id\"\")} - {c[\"\"cell_type\"\"]}'''') for i, c in enumerate(cells) if ''''Results Analysis'''' in str(c.get(''''source'''', ''''''''))]\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
